@@ -2,6 +2,7 @@ package com.digisystem.luizapp.service;
 
 //import com.digisystem.luizapp.dto.CustomerDTO;
 //import com.digisystem.luizapp.dto.CustomerMapper;
+import com.digisystem.luizapp.exception.CustomerNotFoundException;
 import com.digisystem.luizapp.model.Customer;
 import com.digisystem.luizapp.repository.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,7 +34,7 @@ public class CustomerService {
 */
 
     public Customer getCustomerById(Long id) {
-       return customerRepository.findById(id).orElse(null);
+       return customerRepository.findById(id).orElseThrow(() -> new CustomerNotFoundException(id));
     }
 
     public void saveCustomer(Customer customer) {
@@ -41,6 +42,7 @@ public class CustomerService {
     }
 
     public void deleteCustomer(Long id) {
+        if(customerRepository.existsById(id))
         customerRepository.deleteById(id);
     }
 

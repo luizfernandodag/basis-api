@@ -3,6 +3,7 @@ package com.salsatechnology.service;
 import com.salsatechnology.model.ProductOrder;
 import com.salsatechnology.model.ProductType;
 import com.salsatechnology.repository.ProductOrderRepository;
+import com.salsatechnology.service.ProductOrderServiceFilter;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,0 +1,23 @@
+1 questão, pêndulo simples, achar o período, tem q passar pra metros, a raiz de 10 é próxima de pi, depende da gravidade
+
+T=2pi raiz de l sobre gravidade
+
+Se for até a lua o consciente aumenta e a gravidade diminuiu 
+2- MhS: qual é a amplitude?  
+Qual a pulsação?
+Qual a fase inicial?
+Qual é a frequência?
+Uma das formas de achar a frequência é omega=2pif ou f=1/t
+Qual a imagem formada pelos espelhos?
+ Quais são as naturezas dos espelhos? Tipos de imagens?
+Previsa saber qual imagem o espelho plano forma, previea saber direita, virtual, real e etc
+Qual forma o espelho convexo? Amplia o campo de visão, as imagens serão virtuais, direitas pq não ficam de cabeça pra baixo e menores - ver situações de espelhos pra identificar qm é quem.
+Um menino foi cortar o cabelo, qual a distância do espelho? Questão do caderno, precisa sabe usar as fórmulas: 1/f=1/p+1/p'
+A=f/f-p
+Ele quer saber o p
+Qual valor do foco do espelho? 
+Subistitui pela fórmula do aumento 
+
+Ametropias, correções para miopia e hipermetropia, qual lente usar? Se ele enxerga até 2 metros, qual valor do foco q ele tem q enxergar?
+Como corrige a vergencia, o foco muda, tem q estar em metros
+E hipermetro

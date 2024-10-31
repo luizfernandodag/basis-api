@@ -11,7 +11,7 @@ import java.util.List;
 @RestController
 @CrossOrigin("http://localhost:3000")
 
-@RequestMapping("/customers")
+//@RequestMapping("/customers")
 public class CustomerController {
 
     @Autowired
@@ -21,30 +21,45 @@ public class CustomerController {
     public List<CustomerDTO> getAllCustomers() {
         return customerService.getAllCustomers();
     }*/
-
+   @RequestMapping(
+           value = "/customers",
+           produces = "application/json",
+           method = {RequestMethod.GET})
     public List<Customer> getAllCustomers() {
         return customerService.getAllCustomers();
     }
-
-    @GetMapping("/{id}")
+    @RequestMapping(
+            value = "/customers/{id}",
+            produces = "application/json",
+            method = {RequestMethod.GET})
+    //@GetMapping("/customers/{id}")
     public Customer getCustomerById(@PathVariable Long id) {
         return customerService.getCustomerById(id);
     }
 
 
-
-    @PutMapping("/update/{id}")
+    @RequestMapping(
+            value = "/customers/update/{id}",
+            produces = "application/json",
+            method = {RequestMethod.PUT})
+    //@PutMapping("/customer/update/{id}")
     public void updateCustomer(@PathVariable Long id, @RequestBody Customer customer) {
         customerService.update(id, customer);
 
     }
 
-    @PostMapping
+    @RequestMapping(
+            value = "/customers",
+            produces = "application/json",
+            method = {RequestMethod.POST})
     public void saveCustomer(@RequestBody Customer customer) {
         customerService.saveCustomer(customer);
     }
 
-    @DeleteMapping("/delete/{id}")
+    @RequestMapping(
+            value = "/customers/delete/{id}",
+            produces = "application/json",
+            method = {RequestMethod.DELETE})
     public void deleteCustomer(@PathVariable Long id) {
         customerService.deleteCustomer(id);
     }

@@ -1,6 +1,7 @@
 package com.basis.model;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 import jakarta.persistence.CascadeType;
@@ -33,9 +34,36 @@ import lombok.Setter;
 
 @Entity
 @Table(name = "Pessoa")
-@Getter
-@Setter
-public abstract class Pessoa implements Serializable {
+//@Getter
+//@Setter
+public class Pessoa implements Serializable {
+	public long getPessoaPK() {
+		return pessoaPK;
+	}
+	public void setPessoaPK(long pessoaPK) {
+		this.pessoaPK = pessoaPK;
+	}
+	public String getTelefone() {
+		return telefone;
+	}
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public List<Endereco> getEnderecos() {
+		return enderecos;
+	}
+	public void setEnderecos(List<Endereco> enderecos) {
+		this.enderecos = enderecos;
+	}
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
 	private static final long serialVersionUID = 1L;
 
 	@Id
@@ -48,7 +76,7 @@ public abstract class Pessoa implements Serializable {
 	@Column(name = "Email", length = 100, nullable = false)
 	private String email;
 	@OneToMany(mappedBy = "pessoa", cascade = CascadeType.ALL)
-	List<Endereco> enderecos;
+	private List<Endereco> enderecos = new ArrayList<Endereco>();;
 
 }
 /*

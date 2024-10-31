@@ -1,8 +1,8 @@
-package com.digisystem.luiz.controladores;
+package com.digisystem.luizapp.controladores;
 
-import com.digisystem.luiz.dto.ProductDTO;
-import com.digisystem.luiz.model.Product;
-import com.digisystem.luiz.service.ProductService;
+//import com.digisystem.luizapp.dto.ProductDTO;
+import com.digisystem.luizapp.model.Product;
+import com.digisystem.luizapp.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,34 +11,49 @@ import java.util.List;
 @RestController
 @CrossOrigin("http://localhost:3000")
 
-@RequestMapping("/products")
 
 public class ProductController {
 
     @Autowired
     private ProductService productService;
 
-    @GetMapping
-    public List<ProductDTO> getAllProducts() {
+    @RequestMapping(
+            value = "/products",
+            produces = "application/json",
+            method = {RequestMethod.GET})
+    public List<Product> getAllProducts() {
         return productService.getAllProducts();
     }
 
-    @GetMapping("/{id}")
-    public ProductDTO getProductById(@PathVariable Long id) {
+    @RequestMapping(
+            value = "/products/{id}",
+            produces = "application/json",
+            method = {RequestMethod.GET})
+    //@GetMapping("/{id}")
+    public Product getProductById(@PathVariable Long id) {
         return productService.getProductById(id);
     }
-
-    @PostMapping
+    @RequestMapping(
+            value = "/products",
+            produces = "application/json",
+            method = {RequestMethod.POST})
     public void saveProduct(@RequestBody Product product) {
         productService.saveProduct(product);
     }
-
-    @DeleteMapping("/delete/{id}")
+    @RequestMapping(
+            value = "/products/delete/{id}",
+            produces = "application/json",
+            method = {RequestMethod.DELETE})
+    //@DeleteMapping("/delete/{id}")
     public void deleteProduct(@PathVariable Long id) {
         productService.deleteProduct(id);
     }
 
-    @PutMapping("/update/{id}")
+    @RequestMapping(
+            value = "/products/update/{id}",
+            produces = "application/json",
+            method = {RequestMethod.PUT})
+   // @PutMapping("/update/{id}")
     public void updateProduct(@PathVariable Long id, @RequestBody Product product) {
         productService.update(id, product);
 

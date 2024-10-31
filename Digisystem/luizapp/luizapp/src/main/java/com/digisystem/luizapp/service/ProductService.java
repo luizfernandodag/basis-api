@@ -1,9 +1,9 @@
-package com.digisystem.luiz.service;
+package com.digisystem.luizapp.service;
 
-import com.digisystem.luiz.dto.ProductDTO;
-import com.digisystem.luiz.dto.ProductMapper;
-import com.digisystem.luiz.model.Product;
-import com.digisystem.luiz.repository.ProductRepository;
+//import com.digisystem.luizapp.dto.ProductDTO;
+//import com.digisystem.luizapp.dto.ProductMapper;
+import com.digisystem.luizapp.model.Product;
+import com.digisystem.luizapp.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,8 +15,8 @@ public class ProductService {
     @Autowired
     private ProductRepository productRepository;
 
-    @Autowired
-    private ProductMapper productMapper;
+//    @Autowired
+//    private ProductMapper productMapper;
 
    // public List<Product> getAllProducts() {
      //   return productRepository.findAll();
@@ -30,13 +30,13 @@ public class ProductService {
         productRepository.save(product);
     }
 
-    public List<ProductDTO> getAllProducts() {
-        return ProductMapper.toListDTO(productRepository.findAll());
+    public List<Product> getAllProducts() {
+        return productRepository.findAll();
     }
 
 
-    public ProductDTO getProductById(Long id) {
-        return ProductMapper.toDTO(productRepository.findById(id).orElse(null));
+    public Product getProductById(Long id) {
+        return productRepository.findById(id).orElse(null);
     }
 
 
