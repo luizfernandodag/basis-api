@@ -1,0 +1,18 @@
+Chief
+
+https://github.com/schief-ai
+
+luizfernando@schief.ai
+
+TO DO --------------------------------------------------------------------------------------------------------
+			ferramenta
+				https://fastapi.tiangolo.com/learn/
+					padronização de projeto
+						crud, routes e services
+				docker
+				bruno - teste api
+				bekeeper
+				go
+				
+		interface de comunicação multiagent
+
