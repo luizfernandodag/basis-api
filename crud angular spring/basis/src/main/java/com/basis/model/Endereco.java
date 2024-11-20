@@ -50,8 +50,12 @@ public class Endereco {
 	@JoinColumn(name = "pessoaPK", nullable = false)
 	private Pessoa pessoa;
 
-	public Endereco(@Nonnull TipoEndereco tipoEndereco, @Nonnull String endereco, String numero, String complemento,
-			@Nonnull String bairro, @Nonnull String CEP, @Nonnull String cidade, @Nonnull String uF, Pessoa pessoa) {
+	public Endereco(@Nonnull TipoEndereco tipoEndereco,
+			@Nonnull String endereco,
+			String numero,
+			String complemento,
+			@Nonnull String bairro, @Nonnull String CEP,
+			@Nonnull String cidade, @Nonnull String uF, Pessoa pessoa) {
 		this.tipoEndereco = tipoEndereco;
 		Endereco = endereco;
 		Numero = numero;

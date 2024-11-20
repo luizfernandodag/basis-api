@@ -12,10 +12,42 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Getter
-@Setter
+//@Getter
+//@Setter
 public class PessoaJuridica extends Pessoa {
 
+	public long getPessoajuridicaPK() {
+		return pessoajuridicaPK;
+	}
+	public void setPessoajuridicaPK(long pessoajuridicaPK) {
+		this.pessoajuridicaPK = pessoajuridicaPK;
+	}
+	public Pessoa getPessoa() {
+		return pessoa;
+	}
+	public void setPessoa(Pessoa pessoa) {
+		this.pessoa = pessoa;
+	}
+	public String getCNPJ() {
+		return CNPJ;
+	}
+	public void setCNPJ(String cNPJ) {
+		CNPJ = cNPJ;
+	}
+	public String getRazaoSocial() {
+		return RazaoSocial;
+	}
+	public void setRazaoSocial(String razaoSocial) {
+		RazaoSocial = razaoSocial;
+	}
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+	public PessoaJuridica(String cNPJ, String razaoSocial) {
+		super();
+		CNPJ = cNPJ;
+		RazaoSocial = razaoSocial;
+	}
 	/**
 	 * 
 	 */

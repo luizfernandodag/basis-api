@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Depurador do Python: Script",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/DOING/requests_schief.py", // Caminho para o seu script
+      "console": "integratedTerminal", // Use o terminal integrado
+      "module": "config",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/config;${workspaceFolder}/arquivos_recursos;${workspaceFolder}/DONE;${workspaceFolder}/template_repo"
+      }
+    }
+  ]
+}

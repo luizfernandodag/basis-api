@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ddefc06b-b433-4e03-8456-1a4096c0547b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../DigiSystem/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DigiSystem/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DigiSystem/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DigiSystem/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DigiSystem/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DigiSystem/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DigiSystem/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DigiSystem/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DigiSystem/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DigiSystem/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/luizapp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luizapp/src/main/java/com/digisystem/luizapp/controladores/CompraController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luizapp/src/main/java/com/digisystem/luizapp/controladores/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luizapp/src/main/java/com/digisystem/luizapp/controladores/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luizapp/src/main/java/com/digisystem/luizapp/exception/CustomerNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luizapp/src/main/java/com/digisystem/luizapp/model/Compra.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luizapp/src/main/java/com/digisystem/luizapp/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luizapp/src/main/java/com/digisystem/luizapp/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luizapp/src/main/java/com/digisystem/luizapp/repository/CompraRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luizapp/src/main/java/com/digisystem/luizapp/repository/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luizapp/src/main/java/com/digisystem/luizapp/repository/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luizapp/src/main/java/com/digisystem/luizapp/service/CompraService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luizapp/src/main/java/com/digisystem/luizapp/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luizapp/src/main/java/com/digisystem/luizapp/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luizapp/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luizapp/src/main/resources/hibernate.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bem pago/senior-developer-challenge.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BancoDoNordeste/backend1/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../BancoDoNordeste/backend1/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BancoDoNordeste/backend1/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../BancoDoNordeste/backend1/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BancoDoNordeste/untitled/src/gerais/geraismain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BancoDoNordeste/untitled/src/gerais/geraismain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BancoDoNordeste/untitled/src/gerais/p1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BancoDoNordeste/untitled/src/gerais/p1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jogo do oito/JogoDoOito/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jogo do oito/JogoDoOito/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../crud angular spring/basis/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../crud angular spring/basis/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../crud angular spring/basis/src/main/java/com/basis/BasisApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../crud angular spring/basis/src/main/java/com/basis/BasisApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../crud angular spring/basis/src/main/java/com/basis/controller/PessoaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../crud angular spring/basis/src/main/java/com/basis/controller/PessoaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../crud angular spring/basis/src/main/java/com/basis/implementacaoes/PessoaFisica.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../crud angular spring/basis/src/main/java/com/basis/implementacaoes/PessoaFisica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../crud angular spring/basis/src/main/java/com/basis/implementacaoes/PessoaJuridica.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../crud angular spring/basis/src/main/java/com/basis/implementacaoes/PessoaJuridica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../crud angular spring/basis/src/main/java/com/basis/interfaces/EnderecoRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../crud angular spring/basis/src/main/java/com/basis/interfaces/PessoaFisicaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../crud angular spring/basis/src/main/java/com/basis/interfaces/PessoaJuridicaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../crud angular spring/basis/src/main/java/com/basis/interfaces/PessoaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../crud angular spring/basis/src/main/java/com/basis/model/Endereco.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../crud angular spring/basis/src/main/java/com/basis/model/Endereco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../crud angular spring/basis/src/main/java/com/basis/model/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../crud angular spring/basis/src/main/java/com/basis/model/Pessoa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../crud angular spring/basis/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../crud angular spring/basis/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2Z67u0lPwdyQeYJxxFHlAcsDwyZ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "BranchLuiz",
+    "last_opened_file_path": "C:/Users/luizf/Documents/Documentos/Trabalho/Salsa/beach-product-rental"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.digisystem.luizapp.exception" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\luizf\Documents\Documentos\Trabalho\Digisystem\luizapp\luizapp\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.digisystem.luizapp.controladores" />
+      <recent name="com.digisystem.luizapp.service" />
+      <recent name="com.digisystem.luizapp.repository" />
+      <recent name="com.digisystem.luizapp.model" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="LuizappApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.digisystem.luizapp.LuizappApplication" />
+      <module name="luizapp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.digisystem.luizapp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.LuizappApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ddefc06b-b433-4e03-8456-1a4096c0547b" name="Changes" comment="" />
+      <created>1701730893385</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701730893385</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/luizapp/src/main/java/com/digisystem/luizapp/controladores/CustomerController.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

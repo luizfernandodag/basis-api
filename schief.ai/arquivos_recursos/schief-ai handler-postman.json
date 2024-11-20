@@ -1,0 +1,1848 @@
+{
+  "info": {
+    "name": "schief-ai handler",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "bruno",
+      "event": []
+    },
+    {
+      "name": "Admin",
+      "item": [
+        {
+          "name": "All subscription plans",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/admin/subscriptions/plans",
+              "host": [],
+              "path": [],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Assistants",
+          "item": [
+            {
+              "name": "All assistants",
+              "event": [],
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "User-Agent",
+                    "value": "insomnia/2023.5.8",
+                    "disabled": true,
+                    "type": "default"
+                  }
+                ],
+                "url": {
+                  "raw": "{{base_url}}/admin/assistants",
+                  "host": [],
+                  "path": [],
+                  "query": [],
+                  "variable": []
+                }
+              }
+            },
+            {
+              "name": "Create new assistant",
+              "event": [],
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "disabled": false,
+                    "type": "default"
+                  },
+                  {
+                    "key": "User-Agent",
+                    "value": "insomnia/2023.5.8",
+                    "disabled": false,
+                    "type": "default"
+                  }
+                ],
+                "url": {
+                  "raw": "{{base_url}}/admin/assistants",
+                  "host": [],
+                  "path": [],
+                  "query": [],
+                  "variable": []
+                },
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\":\"Licitações e Contratos Administrativos\",\n  \"model\":\"gpt-3.5\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "Messages",
+          "item": [
+            {
+              "name": "Get all user messages",
+              "event": [],
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{base_url}}/admin/messages/user/1bd94d87-d960-4d3d-81ac-d41f42b5d4e3",
+                  "host": [],
+                  "path": [],
+                  "query": [],
+                  "variable": []
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "Organization",
+          "item": [
+            {
+              "name": "All orgs",
+              "event": [],
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{base_url}}/admin/organizations",
+                  "host": [],
+                  "path": [],
+                  "query": [],
+                  "variable": []
+                }
+              }
+            },
+            {
+              "name": "Change organization split resources",
+              "event": [],
+              "request": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "User-Agent",
+                    "value": "insomnia/2023.5.8",
+                    "disabled": false,
+                    "type": "default"
+                  }
+                ],
+                "url": {
+                  "raw": "{{base_url}}/admin/organizations/ac0814df-af6e-4516-ba1c-79168b9b7867/split-resources/true",
+                  "host": [],
+                  "path": [],
+                  "query": [],
+                  "variable": []
+                }
+              }
+            },
+            {
+              "name": "Change user organization",
+              "event": [],
+              "request": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "User-Agent",
+                    "value": "insomnia/2023.5.8",
+                    "disabled": false,
+                    "type": "default"
+                  }
+                ],
+                "url": {
+                  "raw": "{{base_url}}/admin/organizations/77096df6-97a1-46ea-b8a0-1e4ac7371257/9b19b257-a880-4547-8ab7-ee31c9266ead",
+                  "host": [],
+                  "path": [],
+                  "query": [],
+                  "variable": []
+                }
+              }
+            },
+            {
+              "name": "Get organization metrics",
+              "event": [],
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{base_url}}/admin/organizations/ac0814df-af6e-4516-ba1c-79168b9b7867/metrics",
+                  "host": [],
+                  "path": [],
+                  "query": [],
+                  "variable": []
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "Subscriptions",
+          "item": [
+            {
+              "name": "Create new organization subscription",
+              "event": [],
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "disabled": false,
+                    "type": "default"
+                  },
+                  {
+                    "key": "User-Agent",
+                    "value": "insomnia/2023.5.8",
+                    "disabled": false,
+                    "type": "default"
+                  }
+                ],
+                "url": {
+                  "raw": "{{base_url}}/admin/subscriptions/user/eca6b9a1-f45f-4519-aa49-6fc0db319642",
+                  "host": [],
+                  "path": [],
+                  "query": [],
+                  "variable": []
+                },
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"dev\":{\n    \"plan_id\":\"e27ac783-e35c-4397-ab70-26a0a99637d5\",\n  \"assistants_guids\": [\n    \"c2cf2890-a11a-4816-85de-6c23fccf9bcd\"\n  ],\n  \"force\":true\n  }\n  ,\n    \"plan_id\":\"40c382de-9614-4821-bdbe-6711ae1a5c18\",\n    \"assistants_guids\": [\n      \"bc1b9bf1-6d96-4396-9635-79facdbedba9\"\n    ],\n    \"force\":true\n  }",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "name": "Create new user subscription",
+              "event": [],
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "disabled": false,
+                    "type": "default"
+                  },
+                  {
+                    "key": "User-Agent",
+                    "value": "insomnia/2023.5.8",
+                    "disabled": false,
+                    "type": "default"
+                  }
+                ],
+                "url": {
+                  "raw": "{{base_url}}/admin/subscriptions/user/eca6b9a1-f45f-4519-aa49-6fc0db319642",
+                  "host": [],
+                  "path": [],
+                  "query": [],
+                  "variable": []
+                },
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"dev\":{\n    \"plan_id\":\"e27ac783-e35c-4397-ab70-26a0a99637d5\",\n  \"assistants_guids\": [\n    \"c2cf2890-a11a-4816-85de-6c23fccf9bcd\"\n  ],\n  \"force\":true\n  }\n  ,\n    \"plan_id\":\"40c382de-9614-4821-bdbe-6711ae1a5c18\",\n    \"assistants_guids\": [\n      \"bc1b9bf1-6d96-4396-9635-79facdbedba9\"\n    ],\n    \"force\":true\n  }",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "name": "Delete all user subscriptions",
+              "event": [],
+              "request": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "User-Agent",
+                    "value": "insomnia/2023.5.8",
+                    "disabled": false,
+                    "type": "default"
+                  }
+                ],
+                "url": {
+                  "raw": "{{base_url}}/admin/subscriptions/user/1bd94d87-d960-4d3d-81ac-d41f42b5d4e3",
+                  "host": [],
+                  "path": [],
+                  "query": [],
+                  "variable": []
+                }
+              }
+            },
+            {
+              "name": "Get organization current subscription",
+              "event": [],
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "User-Agent",
+                    "value": "insomnia/2023.5.8",
+                    "disabled": true,
+                    "type": "default"
+                  }
+                ],
+                "url": {
+                  "raw": "{{base_url}}/admin/subscriptions/organization/40065023-97d0-49fc-bd09-3308ac34cd62/current",
+                  "host": [],
+                  "path": [],
+                  "query": [],
+                  "variable": []
+                }
+              }
+            },
+            {
+              "name": "Get user current subscription",
+              "event": [],
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "User-Agent",
+                    "value": "insomnia/2023.5.8",
+                    "disabled": false,
+                    "type": "default"
+                  }
+                ],
+                "url": {
+                  "raw": "{{base_url}}/admin/subscriptions/user/90f71e19-3313-4577-b170-87af3be4d84d/current",
+                  "host": [],
+                  "path": [],
+                  "query": [],
+                  "variable": []
+                }
+              }
+            },
+            {
+              "name": "Get user subscription history",
+              "event": [],
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "User-Agent",
+                    "value": "insomnia/2023.5.8",
+                    "disabled": false,
+                    "type": "default"
+                  }
+                ],
+                "url": {
+                  "raw": "{{base_url}}/admin/subscriptions/user/1bd94d87-d960-4d3d-81ac-d41f42b5d4e3/history",
+                  "host": [],
+                  "path": [],
+                  "query": [],
+                  "variable": []
+                }
+              }
+            },
+            {
+              "name": "Manage subscription assistants",
+              "event": [],
+              "request": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "disabled": false,
+                    "type": "default"
+                  },
+                  {
+                    "key": "User-Agent",
+                    "value": "insomnia/2023.5.8",
+                    "disabled": false,
+                    "type": "default"
+                  }
+                ],
+                "url": {
+                  "raw": "{{base_url}}/admin/subscriptions/af32d455-e9f7-44fe-a458-f6541dfa1e5d/assistants",
+                  "host": [],
+                  "path": [],
+                  "query": [],
+                  "variable": []
+                },
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n\t\"assistants_guids\":\n\t[\n\t\t\"8475fe8d-f1bb-4ef0-995e-dc8da732f86b\",\n\t\t\"356680a6-4c7b-4db0-ba95-7096722c7589\"\n\t]\n}\n",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "name": "Upgrade user subscription plan",
+              "event": [],
+              "request": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "disabled": false,
+                    "type": "default"
+                  },
+                  {
+                    "key": "User-Agent",
+                    "value": "insomnia/2023.5.8",
+                    "disabled": false,
+                    "type": "default"
+                  }
+                ],
+                "url": {
+                  "raw": "{{base_url}}/admin/subscriptions/upgrade/e27ac783-e35c-4397-ab70-26a0a99637d5/1bd94d87-d960-4d3d-81ac-d41f42b5d4e3",
+                  "host": [],
+                  "path": [],
+                  "query": [],
+                  "variable": []
+                },
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n\t\"assistants_guids\": [\n\t\t\"5749cea9-6dfe-4ddb-aa7f-300bf3fc2b87\"\n\t]\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "Thread",
+          "item": [
+            {
+              "name": "Get thread content",
+              "event": [],
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "User-Agent",
+                    "value": "insomnia/2023.5.8",
+                    "disabled": false,
+                    "type": "default"
+                  }
+                ],
+                "url": {
+                  "raw": "{{base_url}}/admin/threads/d7c3a61b-2fa8-4d8a-aae3-b7aef89f8c19/content",
+                  "host": [],
+                  "path": [],
+                  "query": [],
+                  "variable": []
+                }
+              }
+            },
+            {
+              "name": "Get user content",
+              "event": [],
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "User-Agent",
+                    "value": "insomnia/2023.5.8",
+                    "disabled": false,
+                    "type": "default"
+                  }
+                ],
+                "url": {
+                  "raw": "{{base_url}}/admin/threads/user/1bd94d87-d960-4d3d-81ac-d41f42b5d4e3/all/content",
+                  "host": [],
+                  "path": [],
+                  "query": [],
+                  "variable": []
+                }
+              }
+            },
+            {
+              "name": "Get user threads",
+              "event": [],
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "User-Agent",
+                    "value": "insomnia/2023.5.8",
+                    "disabled": false,
+                    "type": "default"
+                  }
+                ],
+                "url": {
+                  "raw": "{{base_url}}/admin/threads/user/1bd94d87-d960-4d3d-81ac-d41f42b5d4e3",
+                  "host": [],
+                  "path": [],
+                  "query": [],
+                  "variable": []
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "Users",
+          "item": [
+            {
+              "name": "Delete user",
+              "event": [],
+              "request": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "User-Agent",
+                    "value": "insomnia/2023.5.8",
+                    "disabled": false,
+                    "type": "default"
+                  }
+                ],
+                "url": {
+                  "raw": "{{base_url}}/admin/users/7ace9c03-15b6-4199-a8c9-7a5fa09c71c3/delete",
+                  "host": [],
+                  "path": [],
+                  "query": [],
+                  "variable": []
+                }
+              }
+            },
+            {
+              "name": "Get all user_roles",
+              "event": [],
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "User-Agent",
+                    "value": "insomnia/2023.5.8",
+                    "disabled": true,
+                    "type": "default"
+                  }
+                ],
+                "url": {
+                  "raw": "{{base_url}}/admin/users/roles",
+                  "host": [],
+                  "path": [],
+                  "query": [],
+                  "variable": []
+                }
+              }
+            },
+            {
+              "name": "Get all users",
+              "event": [],
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "User-Agent",
+                    "value": "insomnia/2023.5.8",
+                    "disabled": true,
+                    "type": "default"
+                  }
+                ],
+                "url": {
+                  "raw": "{{base_url}}/admin/users",
+                  "host": [],
+                  "path": [],
+                  "query": [],
+                  "variable": []
+                }
+              }
+            },
+            {
+              "name": "Get all users metrics",
+              "event": [],
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "User-Agent",
+                    "value": "insomnia/2023.5.8",
+                    "disabled": false,
+                    "type": "default"
+                  }
+                ],
+                "url": {
+                  "raw": "{{base_url}}/admin/users/metrics",
+                  "host": [],
+                  "path": [],
+                  "query": [],
+                  "variable": []
+                }
+              }
+            },
+            {
+              "name": "Get user metrics",
+              "event": [],
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "User-Agent",
+                    "value": "insomnia/2023.5.8",
+                    "disabled": true,
+                    "type": "default"
+                  }
+                ],
+                "url": {
+                  "raw": "{{base_url}}/admin/users/90f71e19-3313-4577-b170-87af3be4d84d/metrics",
+                  "host": [],
+                  "path": [],
+                  "query": [],
+                  "variable": []
+                }
+              }
+            },
+            {
+              "name": "Single user",
+              "event": [],
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "User-Agent",
+                    "value": "insomnia/2023.5.8",
+                    "disabled": true,
+                    "type": "default"
+                  }
+                ],
+                "url": {
+                  "raw": "{{base_url}}/admin/users/90f71e19-3313-4577-b170-87af3be4d84d",
+                  "host": [],
+                  "path": [],
+                  "query": [],
+                  "variable": []
+                }
+              }
+            },
+            {
+              "name": "Update user roles",
+              "event": [],
+              "request": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "disabled": false,
+                    "type": "default"
+                  },
+                  {
+                    "key": "User-Agent",
+                    "value": "insomnia/2023.5.8",
+                    "disabled": true,
+                    "type": "default"
+                  }
+                ],
+                "url": {
+                  "raw": "{{base_url}}/admin/users/c927d459-6028-49ad-b0d5-9ed029dc0207/roles",
+                  "host": [],
+                  "path": [],
+                  "query": [],
+                  "variable": []
+                },
+                "body": {
+                  "mode": "raw",
+                  "raw": "[\n  {\"guid\":\"cb165000-76fd-4dd1-97e3-445e869c3af4\"}\n]",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Answer Reports",
+      "item": [
+        {
+          "name": "New answer report",
+          "event": [],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "disabled": false,
+                "type": "default"
+              },
+              {
+                "key": "User-Agent",
+                "value": "insomnia/2023.5.8",
+                "disabled": false,
+                "type": "default"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/answers/report",
+              "host": [],
+              "path": [],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"content\": \"estou participando de uma licitação de publicidade, regida pela Lei nº 12.232/2010, na qual preciso apresentar um plano de comunicação publicitária. Nesse plano, preciso apresentar peças criativas, que simulem peças publicitárias a serem veiculadas numa campanha publicitária. Uma dessas peças é um vídeo de 120 segundos, o qual é composto por vídeos menores extraídos da internet. Nesse sentido e considerando a legislação sobre direitos autorais, bem como a doutrina e a jurisprudência, há alguma violação de direito autoral na utilização de um vídeo de 5 segundos encontrado na internet, que faz parte de uma campanha publicitária já veiculada na vida real, como parte da peça criativa que apresentarei na licitação?\",\n    \"user_id\": \"01f2f7cd-dd88-4798-a2e9-c59aff15062d\",\n    \"answer_id\": \"a903b958-0008-4740-9f18-5b9e6ac4f947\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Answers",
+      "item": [
+        {
+          "name": "Contexts",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "User-Agent",
+                "value": "insomnia/2023.5.8",
+                "disabled": false,
+                "type": "default"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/admin/answers/947e4d7e-631f-4138-8aa6-63924d0e2445/contexts",
+              "host": [],
+              "path": [],
+              "query": [],
+              "variable": []
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Assistants",
+      "item": [
+        {
+          "name": "Assitants",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "User-Agent",
+                "value": "insomnia/2023.5.8",
+                "disabled": false,
+                "type": "default"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/assistants",
+              "host": [],
+              "path": [],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "New assitants",
+          "event": [],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "disabled": false,
+                "type": "default"
+              },
+              {
+                "key": "User-Agent",
+                "value": "insomnia/2023.5.8",
+                "disabled": false,
+                "type": "default"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/assistants",
+              "host": [],
+              "path": [],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"name\": \"Licitações e Contratos Administrativos - Light\",\n\t\"model\": \"gpt-3.5\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Login",
+      "item": [
+        {
+          "name": "Confirm email",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "User-Agent",
+                "value": "insomnia/2023.5.8",
+                "disabled": false,
+                "type": "default"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/login/confirm_email/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJnZGV6YW5Ac2NoaWVmbGVyLmFkdi5iciIsImV4cCI6MTcyNTk4MTQ4OCwiaWF0IjoxNzI1Mzc2Njg4fQ.DlBH1lbZEd6DNbSr6-FTpt_V2H3G6gcUuzMf_-ZaZpc",
+              "host": [],
+              "path": [],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Create new user",
+          "event": [],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "disabled": false,
+                "type": "default"
+              },
+              {
+                "key": "User-Agent",
+                "value": "insomnia/2023.5.8",
+                "disabled": false,
+                "type": "default"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/login/create",
+              "host": [],
+              "path": [],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"first_name\":\"teste\",\n  \"last_name\": \"teste\",\n  \"email\":\"faketeste2@gmail.com\",\n  \"password\":\"senha@teste\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Login",
+          "event": [],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "multipart/form-data",
+                "disabled": false,
+                "type": "default"
+              },
+              {
+                "key": "User-Agent",
+                "value": "insomnia/2023.5.8",
+                "disabled": false,
+                "type": "default"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/login/",
+              "host": [],
+              "path": [],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "username",
+                  "value": "gdezan@schiefler.adv.br",
+                  "disabled": false,
+                  "type": "default"
+                },
+                {
+                  "key": "password",
+                  "value": "KNXupG",
+                  "disabled": false,
+                  "type": "default"
+                },
+                {
+                  "key": "scope",
+                  "value": "admin",
+                  "disabled": false,
+                  "type": "default"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "New Request",
+          "event": [],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "disabled": false,
+                "type": "default"
+              },
+              {
+                "key": "User-Agent",
+                "value": "insomnia/2023.5.8",
+                "disabled": false,
+                "type": "default"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/login/create/super",
+              "host": [],
+              "path": [],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"first_name\":\"Ad\",\n  \"last_name\": \"min\",\n  \"email\":\"admin@admin.com.br\",\n  \"password\":\"senha\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Refresh",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "multipart/form-data",
+                "disabled": false,
+                "type": "default"
+              },
+              {
+                "key": "User-Agent",
+                "value": "insomnia/2023.5.8",
+                "disabled": false,
+                "type": "default"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/login/refresh/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjkyNjIzNTgsImlhdCI6MTcyOTI1NTE1OH0.Jxhdn2NF-PUp24-MsyzASwmR-xqUXF3VDArlMze7w7Y",
+              "host": [],
+              "path": [],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "username",
+                  "value": "gdezan@schiefler.adv.br",
+                  "disabled": false,
+                  "type": "default"
+                },
+                {
+                  "key": "password",
+                  "value": "KNXupG",
+                  "disabled": false,
+                  "type": "default"
+                },
+                {
+                  "key": "scope",
+                  "value": "admin",
+                  "disabled": false,
+                  "type": "default"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Send email confirmation",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "User-Agent",
+                "value": "insomnia/2023.5.8",
+                "disabled": false,
+                "type": "default"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/login/send_email_confirmation/gdezan@schiefler.adv.br",
+              "host": [],
+              "path": [],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Unconfirm",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "User-Agent",
+                "value": "insomnia/2023.5.8",
+                "disabled": false,
+                "type": "default"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/login/unconfirm/gdezan@schiefler.adv.br",
+              "host": [],
+              "path": [],
+              "query": [],
+              "variable": []
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Messages",
+      "item": [
+        {
+          "name": "New Message",
+          "event": [],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "disabled": false,
+                "type": "default"
+              },
+              {
+                "key": "User-Agent",
+                "value": "insomnia/2023.5.8",
+                "disabled": false,
+                "type": "default"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/messages",
+              "host": [],
+              "path": [],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    //\"content\": \"Um termo de credenciamento realizado por chamamento público pela lei 8666/96, sendo encaminhado o protocolo de pedido de aditivo de prazo posterior ao vencimento, sendo que há empenho vigente para a prestação dos serviços. Qual a justificativa para dar andamento ao aditivo?\",\n    \"content\": \"Pode listar as referências utilziadas na primeira mensagem, ignorando o contexto atual\",\n    \"thread_id\": \"4f826d99-f14b-4a23-8b97-011a7b3dae73\",\n    \"assistant_id\": \"1a74fdcc-acd8-4413-9bc5-0de212a9ea01\"\n    //\"assistant_id\": \"bbaff6e3-01e8-47b0-afeb-5da8fc9b6ca4\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Organization",
+      "item": [
+        {
+          "name": "Create",
+          "event": [],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "disabled": false,
+                "type": "default"
+              },
+              {
+                "key": "User-Agent",
+                "value": "insomnia/2023.5.8",
+                "disabled": false,
+                "type": "default"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/organizations",
+              "host": [],
+              "path": [],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"name\":\"Teste\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Current subscription",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "User-Agent",
+                "value": "insomnia/2023.5.8",
+                "disabled": false,
+                "type": "default"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/organizations/subscription",
+              "host": [],
+              "path": [],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "New subscription",
+          "event": [],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "disabled": false,
+                "type": "default"
+              },
+              {
+                "key": "User-Agent",
+                "value": "insomnia/2023.5.8",
+                "disabled": false,
+                "type": "default"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/organizations/subscription",
+              "host": [],
+              "path": [],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"plan_id\": \"97df3ddd-ee12-4e8a-a34b-8252f16301c3\",\n\t\"exp_at\": null,\n\t\"force\":true\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Org Subscriptions",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "User-Agent",
+                "value": "insomnia/2023.5.8",
+                "disabled": false,
+                "type": "default"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/organizations/subscription/history",
+              "host": [],
+              "path": [],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Organization",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "User-Agent",
+                "value": "insomnia/2023.5.8",
+                "disabled": false,
+                "type": "default"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/organizations",
+              "host": [],
+              "path": [],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Subscription Plans",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "User-Agent",
+                "value": "insomnia/2023.5.8",
+                "disabled": false,
+                "type": "default"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/organizations/subscription/plans",
+              "host": [],
+              "path": [],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Update",
+          "event": [],
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "disabled": false,
+                "type": "default"
+              },
+              {
+                "key": "User-Agent",
+                "value": "insomnia/2023.5.8",
+                "disabled": false,
+                "type": "default"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/organizations/77096df6-97a1-46ea-b8a0-1e4ac7371257",
+              "host": [],
+              "path": [],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"name\":\"Schief AI - Time Interno\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Upgrade subscription",
+          "event": [],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "User-Agent",
+                "value": "insomnia/2023.5.8",
+                "disabled": false,
+                "type": "default"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/organizations/subscriptions/upgrade/634350bc-93c3-487e-81b3-9563a5aace35",
+              "host": [],
+              "path": [],
+              "query": [],
+              "variable": []
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "SubscriptionPlans",
+      "item": [
+        {
+          "name": "All subscription plans",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "User-Agent",
+                "value": "insomnia/2023.5.8",
+                "disabled": false,
+                "type": "default"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/subscriptions/plans",
+              "host": [],
+              "path": [],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "New subscription plan",
+          "event": [],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "disabled": false,
+                "type": "default"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/admin/subscriptions/plans",
+              "host": [],
+              "path": [],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"POCs\",\n  \"price\": 0,\n  \"max_answers\": 600,\n  \"max_users\": 20,\n  \"max_assistants\": 5\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Subscriptions",
+      "item": [
+        {
+          "name": "All user subscriptions",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "User-Agent",
+                "value": "insomnia/2023.5.8",
+                "disabled": false,
+                "type": "default"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/subscriptions",
+              "host": [],
+              "path": [],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Handle checkout",
+          "event": [],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "disabled": false,
+                "type": "default"
+              },
+              {
+                "key": "User-Agent",
+                "value": "insomnia/2023.5.8",
+                "disabled": false,
+                "type": "default"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/subscriptions/cs_test_a11uWjh4yysqSRaRGorcWr75f2R4qx4ZwHy63RaCutBKo5rDTuTbmpzsg0/handle",
+              "host": [],
+              "path": [],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"plan_id\": \"c7ae6b57-0e19-4db7-b152-2d3e7bc18b04\",\n\t\"assistants_guids\": []\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Teste",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "User-Agent",
+                "value": "insomnia/2023.5.8",
+                "disabled": false,
+                "type": "default"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/subscriptions",
+              "host": [],
+              "path": [],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Stripe",
+          "item": [
+            {
+              "name": "Create new subscription",
+              "event": [],
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "disabled": false,
+                    "type": "default"
+                  },
+                  {
+                    "key": "User-Agent",
+                    "value": "insomnia/2023.5.8",
+                    "disabled": false,
+                    "type": "default"
+                  }
+                ],
+                "url": {
+                  "raw": "{{base_url}}/subscriptions/",
+                  "host": [],
+                  "path": [],
+                  "query": [],
+                  "variable": []
+                },
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n\t\"plan_id\": \"e27ac783-e35c-4397-ab70-26a0a99637d5\",\n\t\"assistants_guids\": [\"c2cf2890-a11a-4816-85de-6c23fccf9bcd\"]\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "name": "List all user subscriptions",
+              "event": [],
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "User-Agent",
+                    "value": "insomnia/2023.5.8",
+                    "disabled": false,
+                    "type": "default"
+                  }
+                ],
+                "url": {
+                  "raw": "{{base_url}}/subscriptions/gateway",
+                  "host": [],
+                  "path": [],
+                  "query": [],
+                  "variable": []
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Threads",
+      "item": [
+        {
+          "name": "Archive Thread",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "User-Agent",
+                "value": "insomnia/2023.5.8",
+                "disabled": false,
+                "type": "default"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/threads/fc4ac7ad-685b-4528-99b8-eff206e6d30c/archive",
+              "host": [],
+              "path": [],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Archived thread",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "User-Agent",
+                "value": "insomnia/2023.5.8",
+                "disabled": false,
+                "type": "default"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/threads/archived",
+              "host": [],
+              "path": [],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Archived threads",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "User-Agent",
+                "value": "insomnia/2023.5.8",
+                "disabled": false,
+                "type": "default"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/threads/e200d3a8-7642-4c03-93b9-08a45b978241/messages",
+              "host": [],
+              "path": [],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Delte Thread",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "User-Agent",
+                "value": "insomnia/2023.5.8",
+                "disabled": false,
+                "type": "default"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/threads/fc4ac7ad-685b-4528-99b8-eff206e6d30c/archive",
+              "host": [],
+              "path": [],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Regenerate message",
+          "event": [],
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "User-Agent",
+                "value": "insomnia/2023.5.8",
+                "disabled": false,
+                "type": "default"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/threads/0a860838-72ee-48f2-b350-544ceff6357b/regenerate",
+              "host": [],
+              "path": [],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Thread by id",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "User-Agent",
+                "value": "insomnia/2023.5.8",
+                "disabled": false,
+                "type": "default"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/threads/c54d7886-1a77-40f7-8ea1-d1fb2cdb6163",
+              "host": [],
+              "path": [],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Thread messages",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "User-Agent",
+                "value": "insomnia/2023.5.8",
+                "disabled": false,
+                "type": "default"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/threads/bbaff6e3-01e8-47b0-afeb-5da8fc9b6ca4/messages",
+              "host": [],
+              "path": [],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Threads",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "User-Agent",
+                "value": "insomnia/2023.5.8",
+                "disabled": false,
+                "type": "default"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/threads",
+              "host": [],
+              "path": [],
+              "query": [],
+              "variable": []
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "UserRoles",
+      "item": [
+        {
+          "name": "user roles",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "User-Agent",
+                "value": "insomnia/2023.5.8",
+                "disabled": false,
+                "type": "default"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/user-roles",
+              "host": [],
+              "path": [],
+              "query": [],
+              "variable": []
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Users",
+      "item": [
+        {
+          "name": "Update user roles",
+          "event": [],
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "disabled": false,
+                "type": "default"
+              },
+              {
+                "key": "User-Agent",
+                "value": "insomnia/2023.5.8",
+                "disabled": false,
+                "type": "default"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/users/roles",
+              "host": [],
+              "path": [],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "[\n\t{\"guid\":\"733294ae-1ba1-4017-b4f1-29bbd8d78126\"}\n]",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "limits",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "User-Agent",
+                "value": "insomnia/2023.5.8",
+                "disabled": false,
+                "type": "default"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/users/limits",
+              "host": [],
+              "path": [],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "self",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "User-Agent",
+                "value": "insomnia/2023.5.8",
+                "disabled": false,
+                "type": "default"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/users",
+              "host": [],
+              "path": [],
+              "query": [],
+              "variable": []
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "",
+      "type": "default"
+    },
+    {
+      "key": "api_key",
+      "value": "",
+      "type": "default"
+    },
+    {
+      "key": "access_token",
+      "value": "",
+      "type": "default"
+    }
+  ]
+}
